@@ -18,7 +18,7 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
         alignItems="center"
         sx={{ flexDirection: { lg: "row" }, gap: { lg: "110px", xs: "0" } }}
       >
-        {exerciseVideos?.slice(0, 3).map((item, index) => (
+        {exerciseVideos?.slice(0, 6).map((item, index) => (
           <a
             key={index}
             className="exercise-video"
@@ -26,7 +26,11 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
             target="_blank"
             rel="noreferrer"
           >
-            <img src={item.video.thumbnails[0].url} alt={item.video.title} />
+            <img
+              src={item.video.thumbnails[0].url}
+              alt={item.video.title}
+              height={200}
+            />
             <Box>
               <Typography variant="h5" color="#000">
                 {item.video.title}
