@@ -8,8 +8,8 @@ const Footer = () => {
     <Box mt="80px" bgcolor="#fff3f4">
       <Stack gap="40px" alignItems="center" px="40px" pt="24px">
         <img src={Logo} alt="logo" width="200px" height="40px" />
-        <Typography variant="h5" pb="40px" mt="20px">
-          2022 - The P.Bennett Fitness Club
+        <Typography variant="h5" pb="40px" mt="15px">
+          2022 - The P.Bennett Workout Guide
         </Typography>
       </Stack>
     </Box>
